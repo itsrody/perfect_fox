@@ -1,14 +1,21 @@
 /****************************************************************************
- * Perfect Fox                                                             *                                                            *
+ * Perfect Fox                                                               *                                                            *
  * version: 113.0.2                                                             *                             *
 ****************************************************************************/
 
-/** GENERAL ***/
+/** GENERAL **/
 user_pref("nglayout.initialpaint.delay", 0);
 user_pref("nglayout.initialpaint.delay_in_oopif", 0);
 user_pref("security.dialog_enable_delay",      0);
 user_pref("browser.sessionstore.interval",      60000);
 user_pref("content.notify.interval", 100000);
+user_pref("app.normandy.enable", false);
+user_pref("app.normandy.optoutstudies.enabled", false);
+user_pref("beacon.enabled", false);
+user_pref("browser.meta_refresh_when_inactive.disabled", true);
+user_pref("browser.tabs.unloadOnLowMemory", false);
+user_pref("browser.newtab.preload", false);
+
 
 /** GFX ***/
 user_pref("gfx.webrender.all", true); // enables WR (GPU) + additional features
@@ -47,6 +54,7 @@ user_pref("network.early-hints.preconnect.max_connections", 103);
 user_pref("network.http.pacing.requests.min-parallelism", 18);
 user_pref("network.buffer.cache.size", 327680); 
 user_pref("network.buffer.cache.count", 240);
+user_pref("network.http.sendRefererHeader", 0);
 
 /** PREDICTIVE NETWORK **/
 user_pref("network.dns.disablePrefetchFromHTTPS", false);
@@ -133,10 +141,15 @@ user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 
 /*** POCKET ***/
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref(" browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("extensions.pocket.enabled", false);
 user_pref("extensions.pocket.api", " ");
 user_pref("extensions.pocket.oAuthConsumerKey", " ");
 user_pref("extensions.pocket.site", "");
+
 
 /** DOWNLOADS ***/
 user_pref("browser.download.useDownloadDir", false);
